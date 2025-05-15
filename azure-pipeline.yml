@@ -30,7 +30,7 @@ steps:
 - task: AzureFunctionApp@1
   displayName: 'Deploy Function App to Azure'
   inputs:
-    azureSubscription: '<your-service-connection>' # Replace with your Azure service connection name
+    azureSubscription: 'b3df1a00-1e0a-4362-823b-8329a87ce31f' # Replace with your Azure service connection name
     appType: 'functionApp'
-    appName: '<your-function-app-name>' # Replace with your Function App name
+    appName: 'pipeline1111' # Replace with your Function App name
     package: '$(System.DefaultWorkingDirectory)/**/*.zip' # Path to the package to be deployed
